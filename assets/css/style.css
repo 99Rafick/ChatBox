@@ -117,6 +117,17 @@ button.btn-chatbox.active span ion-icon:first-child{
 }
 
 
+@media screen and (max-width: 500px) {
+    .chatbox{
+        right: 20px;
+    }
+
+    button.btn-chatbox{
+        right: 20px;
+    }
+    
+}
+
 .chatbox.active{
     opacity: 1;
     transform: translateX(-25px);
