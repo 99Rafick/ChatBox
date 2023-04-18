@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBox</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+<body>
+   
+    <div class="chatbox">
+        <div class="header">
+            <div class="left">
+                <img src="assets/image/téléchargement.png" alt="">
+                <span>OPUS</span>
+            </div>
+            <div class="right">
+                <div class="more">
+                    <ion-icon name="more"></ion-icon>
+                </div>
+                <div class="close">
+                    <ion-icon name="close"></ion-icon>
+                </div>
+            </div>
+
+        </div>
+        <aside>
+            <div class="ligne"></div>
+            <span>En ligne maintenant</span>
+        </aside>
+
+        <div class="chat">
+            <span class="send">Bonjour</span>
+            <span class="send">Je suis John Doe</span>
+            <span class="outcome">Oui, Bonjour nous somme opus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae modi exercitationem voluptatem nobis nihil eum esse, consequatur adipisci iusto accusantium tenetur animi, temporibus numquam, dolorem soluta harum suscipit deleniti. Tempora.</span>
+
+        </div>
+
+        <div class="field">
+            <textarea name="" id="" cols="" rows="" placeholder="Envoyer un message ..."></textarea>
+        </div>
+    </div>
+
+    <button class="btn-chatbox">
+        <ion-icon name="chatboxes"></ion-icon>
+        <span>  
+            <ion-icon name="create"></ion-icon>
+            <ion-icon name="send"></ion-icon>
+        </span>
+    </button>
+</body>
+
+
+    <script>
+        let btnChatbox = document.querySelector('.btn-chatbox')
+        let chatbox = document.querySelector('.chatbox')
+        let BtnClose = document.querySelector('.close')
+
+        btnChatbox.addEventListener('click', () => {
+            btnChatbox.classList.add('active')
+            chatbox.classList.add('active')
+        })
+
+        BtnClose.addEventListener('click', () => {
+           chatbox.classList.remove('active')
+           btnChatbox.classList.remove('active')
+        })
+    </script>
+</html>
